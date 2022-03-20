@@ -1,0 +1,763 @@
+/*____________CSS RESET___________ */
+/* _________________________________ */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+
+
+/*______NAVIGATION BAR STYLING START ______ */
+/* ________________________________________*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100wh;
+    min-height: 12vh;
+    box-shadow:0px .2px  5px .2px gray ;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 1.3rem;
+    letter-spacing: .05rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.fa-registered{
+    color: orange;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-left: 23px; */
+    min-width: 50%;
+    
+    
+}
+
+.nav-links li a{        
+    text-decoration: none;
+    color: rgb(128, 126, 126);
+    font-weight: 400;
+    font-size: 1.05rem;
+    padding-bottom: 4.5vh;
+    /* padding-left: 2rem; */
+}
+
+.nav-links li a:active{
+    border-bottom: 3px solid rgb(255, 159, 49);
+    color:  rgb(255, 159, 49);
+}
+
+.nav-links li a:hover{
+    border-bottom: 3px solid rgb(255, 159, 49);
+    color: rgb(255, 159, 49);
+}
+
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 1.03rem;
+    background-color: rgb(255, 159, 49);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px grey;
+    
+}
+
+.btn a:hover{
+    background-color:rgb(252, 173, 82) ;
+    transition: .3s;
+}
+/*______NAVIGATION BAR STYLING END______ */
+/* ________________________________________*/
+
+
+
+/*________HAMBURGER STYLING__________ */
+/* _________________________________ */
+.icon div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0px;
+    border-radius: 5px;
+    display: none;
+    
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.line{
+    position: relative;
+    
+}
+
+.line-a{
+    transform:rotateZ(45deg);
+    top: 7px;
+}
+
+.line-b{
+    visibility: hidden;
+}
+
+.line-c{
+    transform: rotateZ(-45deg);
+    top: -8px;
+}
+
+/*______HAMBURGER STYLING END_________ */
+/* _________________________________ */
+
+
+
+/*______HOME SECTION STYLING_________ */
+/* _________________________________ */
+.DP img{
+   height: 200px;
+   border: 3px solid rgb(255, 159, 49);
+   border-radius: 50%;
+}
+
+#home{
+    width: 100wh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13rem;
+}
+
+.innerHOME{
+    position: relative;
+    top: 180px;
+    display: flex;
+    max-width:60% ;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 75px rgba(128,149,182,0.15);
+    border-radius: 15px;
+}
+
+.txtSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 5rem;
+    padding-bottom: 3rem;
+    
+}
+
+.title{
+    margin-top: 130px;
+}
+#h1-shadow-primary{
+    text-shadow: 1px 1px 2px rgb(161, 160, 160);
+}
+
+#h1-shadow-secondary{
+    text-shadow: 1px 1px 2px rgb(161, 160, 160);
+}
+
+.title h1{
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 3rem;
+    padding: .5rem 0;
+    
+}
+
+.txtSection p{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(128, 126, 126);
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 1rem 0;
+    padding-bottom: 3rem;
+}
+
+.contact{
+    /* font-family: monospace; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.email a{
+    text-decoration: none;
+    color: rgb(128, 126, 126);
+
+}
+
+.india{
+    color: rgb(128, 126, 126);
+}
+
+.contact {
+    margin: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+   
+}
+
+.fa-envelope ,.fa-map-marker-alt{
+    color:rgb(255, 159, 49) ;
+}
+
+
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('IMG/portfolio\ cover.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -5;
+}
+
+.DP{
+    position: absolute;
+    top: -5.5rem;
+    
+}
+/*__________EXPERIENCE SECTION________ */
+/* _________________________________ */
+
+
+
+
+/*__________WORKING EXPERIENCE________ */
+/* _________________________________ */
+
+.working-exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+
+}
+
+.working-exp h1{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    box-shadow: 0 10px 75px rgba(128,149,182,0.15);
+    border-radius: 15px;
+    margin: 1rem 0;
+    padding: 2.5rem 0;
+    background-color: white;
+}
+
+.company{
+    /* width: 100%; */
+    width: 76%;
+}
+
+.company p{
+    margin: .7rem 0;
+    
+}
+
+.company a{
+    text-decoration: none;
+    color: rgb(52, 121, 248);
+    font-size: 17px;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.c-title{
+    font-size: 17px;
+    font-weight: 450;
+}
+
+.c-post{
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+
+.fa-briefcase, .fa-graduation-cap{
+    font-size: 45px;
+    color: rgb(255, 159, 49);
+    padding:2rem;
+}
+
+.year, .hiddenPara{
+    font-size: 17px;
+    letter-spacing: .5px;
+    
+}
+
+.gray{
+    color: rgb(150, 150, 150);
+    
+}
+
+.HP1 , .HP2{
+    display: none;
+    padding-right: 2rem;
+
+    font-size: 1rem;
+    color: rgb(128, 126, 126);
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    padding-bottom: 3rem;
+}
+
+
+
+/*________EDUCATION SECTION________ */
+/* _________________________________ */
+#Education{
+    background-color: rgba(246, 250, 252, 1);
+}
+
+
+
+
+
+
+/*______SKILLS SECTION ________ */
+/* _________________________________ */
+
+.skills{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.skill-head{
+    font-size: 23px;
+    margin: 1.5rem;  
+    font-weight: bold;
+}
+
+.skill-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+}
+
+.skill-list{
+    display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+}
+.list{
+    width: 35%;
+    margin: .6rem 0rem;
+}
+
+.score{
+    margin: 1.8rem 0rem;
+}
+
+
+.score-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.primary-p{
+    color: black;
+    font-weight: 550;
+}
+
+.secondary-p{
+    color: rgb(104, 101, 101);
+}
+
+.pole{
+    width: 100%;
+    height: 8px;
+    background-color: rgb(240, 239, 239);
+    border-radius: 15px;
+    margin: .6rem 0rem;
+}
+.pole-score{
+    height: 100%;
+    background-color: orange;
+    border-radius: 15px;
+}
+.pole-1{
+    width: 40%;
+}
+.pole-2{
+    width: 95%;   
+}
+.pole-3{
+    width: 80%;
+}
+.pole-4{
+    width: 60%;
+}
+.pole-5{
+    width: 70%;
+}
+.pole-6{
+    width: 74%;
+}
+.pole-7{
+    width: 30%;
+}
+.pole-8{
+    width: 88%;
+}
+.pole-9{
+    width: 60%;
+}
+.pole-10{
+    width: 40%;
+}
+
+.special-p{
+    font-weight: 600;
+    color: gray;
+}
+
+/*______LANGUAGE SECTION________ */
+/* _________________________________ */
+.language{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 250, 243);
+    padding: 5rem 0rem;
+}
+
+.language h1{
+    font-size: 23px;
+    margin: 1.5rem;
+    padding: .8rem ;
+}
+
+.l-pack{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+
+.english, .hindi{
+    padding: 1rem 5.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0rem 2rem;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(211, 209, 209);   
+}
+
+.fa-head-side-cough{
+    font-size: 2rem;
+    color: gray;
+}
+
+.spk-lvl{
+    margin-top: 1.2rem;
+}
+
+.l-title{
+    padding: 1rem;
+}
+
+.endHnd{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.spk-lvl{
+    color: gray;
+}
+
+.l-logo{
+    margin-right: 1.2rem;
+}
+
+
+
+
+/*_____Accomplishments And Affiliations_____ */
+/* _________________________________________ */
+
+#acoAffi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.accomplishments h2, .affiliations h2{
+    text-align: center;
+    font-size: 23px;
+    margin: 1.5rem;
+    padding: .8rem ;
+
+    
+}
+.accomplishments, .affiliations{
+    width: 35%;
+}
+
+.accomplishments p, .affiliations p{
+    line-height: 2.2rem;
+    color: rgb(81, 81, 82);
+    letter-spacing: .2px;
+}
+.affiliations{
+    margin-bottom: 2rem;
+}
+
+.accomplishments{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.fa-circle-check{
+    font-size: 1.2rem;
+    color: orange;
+    padding-right: .5rem;
+}
+.accop{
+    display: flex;
+    
+
+}
+
+
+
+
+/*__________FOOTER DESING________ */
+/* _________________________________ */
+#footer{
+    width: 100vw;
+    background-color: black;
+    color: rgb(184, 182, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#footer p{
+    padding: .2rem;
+    font-size: .7rem;
+}
+
+#footer p a{
+    text-decoration: none;
+    color: rgb(199, 193, 193);
+}
+
+.fa-brands{
+    font-size: 2rem;
+    margin:  1rem 1rem;
+    cursor: pointer;
+    color: rgb(170, 169, 169);
+}
+
+
+
+
+/*__________MEDIA QUERY START________ */
+/* _________________________________ */
+@media only screen and ( max-width:1024px){
+    .nav-links{
+        min-width: 100%;
+    }
+    .accomplishments, .affiliations{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    nav{
+        justify-content: space-between;
+    }
+
+    .DP img{
+        height: 180px;
+        box-shadow: 0px 0px 1px 1px  rgb(255, 159, 49);
+    }
+    .DP{
+    position: absolute;
+    top: -5.5rem;
+}
+    .nav-links{
+        position: fixed;
+        top: 12vh;              
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 90vh;
+        right: -100%;
+        transition: .2s ease-in;  
+        justify-content: start;
+        padding-top: 1rem;
+        border-top: 1px solid wheat;
+        /* padding-left: 23px; */
+        /* box-shadow: -2px -0px rgb(231, 231, 231); */
+    }
+    .nav-links li {
+        padding: 1rem 0rem;
+    }
+   
+    .nav-links li a:hover{
+        border-bottom: none;
+    }
+
+    .nav-links li a{
+        color: rgb(80, 74, 70);
+        padding-bottom: 0rem;
+        font-weight: bold;
+        /* padding-left: 2rem; */
+        letter-spacing: .8px;
+        
+    }
+    .btn{
+        margin-top: 5rem;
+        /* box-shadow: 5px 5px gray; */
+    }
+
+    .nav-active{
+        right: 0px;
+    }
+
+    .logo{
+        margin-left: 15px;
+    }
+   
+    .icon div{
+        display: block;
+        margin-right: 1.2rem;
+        position: relative;
+    }
+    
+    .innerHOME{
+        max-width: 90%;
+        padding-bottom: .5rem;
+    }
+    
+    .txtSection{
+        padding: 0px 0rem;
+    }
+    .title{
+        margin-top: 110px;
+    }
+
+    .title h1{
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 1.9rem;
+    }
+
+    .contact{
+        flex-direction: column;
+        height: 80px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .contact span{
+        margin: 1rem 1rem;
+    }
+
+    .txtSection p{
+        text-align: left;
+        width: 85%;
+    }
+
+    .card{
+        width: 90%;
+        background-color: white;
+    }
+
+    .l-pack{
+        flex-direction: column;
+    }
+
+    .english, .hindi{
+        margin: 1rem 0rem;
+        padding: 1rem 2rem;
+        
+    }
+    
+    .language {
+        padding: .8rem ;
+    }
+
+    .skill-list{
+        flex-direction: column;
+    
+
+    }
+    .list{
+        width: 100%;
+    }
+    
+    .skill-inner{
+        width: 85%;
+    }
+    .accomplishments, .affiliations{
+        width: 90%;
+    }
+    .fa-briefcase, .fa-graduation-cap{
+        padding: 1rem;
+    }
+
+    /*  */
+    .hiddenPara{
+        width: 80%;
+    }
+    
+}
+
+
+/*__________MEDIA QUERY END________ */
+/* _________________________________ */
