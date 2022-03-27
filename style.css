@@ -12,6 +12,7 @@ html{
 
 body{
     overflow-x: hidden;
+
     font-family: sans-serif;
 }
 
@@ -284,6 +285,7 @@ nav{
     margin: 1rem 0;
     padding: 2.5rem 0;
     background-color: white;
+    overflow: hidden;
 }
 
 .company{
@@ -349,6 +351,7 @@ nav{
 /* _________________________________ */
 #Education{
     background-color: rgba(246, 250, 252, 1);
+    overflow: hidden;
 }
 
 
